@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NL:wght@100..400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.page {
+    width: 100%;
+    height: 100vh;
+}
+.line1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 174, 0);
+    padding: 20px;
+    
+}
+.line1 .a {
+    width: 40px;
+    height: 2px;
+    background-color: rgb(255, 174, 0);
+}
+.line1 .b {
+    font-size: 1rem;
+    font-family: "Playwrite NL";
+    font-weight: 800;
+}
+.line1 .c {
+    width: 40px;
+    height: 2px;
+    background-color: rgb(255, 174, 0);
+}
+.line2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+.box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 100px;
+}
+.box .box1 .outline {
+    width: 40px;
+    height: 2px;
+    background-color: rgb(255, 174, 0);
+}
+.box .box1 .a p {
+    font-family: "Playwrite NL";
+    color: rgb(255, 174, 0);
+    font-weight: 800;
+}
+.box .box1 .a {
+    display: flex;
+    align-items: center;
+}
+.box .box2 .a p {
+    font-family: "Playwrite NL";
+    color: rgb(255, 174, 0);
+    font-weight: 800;
+}
+.box .box2 .a {
+    display: flex;
+    align-items: center;
+}
+.box .box3 .a p {
+    font-family: "Playwrite NL";
+    color: rgb(255, 174, 0);
+    font-weight: 800;
+}
+.box .box3 .a {
+    display: flex;
+    align-items: center;
+}
+.box .box2 .outline {
+    width: 40px;
+    height: 2px;
+    background-color: rgb(255, 174, 0);
+}
+.box .box3 .outline {
+    width: 40px;
+    height: 2px;
+    background-color: rgb(255, 174, 0);
+}
+.box1 .b {
+    margin-top: 5px;
+    display: flex;
+}
+.box1 .b i {
+    color: rgb(255, 174, 0);
+}
+.box2 .b {
+    margin-top: 5px;
+    display: flex;
+}
+.box2 .b i {
+    color: rgb(255, 174, 0);
+}
+.box3 .b {
+    margin-top: 5px;
+    display: flex;
+}
+.box3 .b i {
+    color: rgb(255, 174, 0);
+}
+
+.side {
+    width: 100%;
+    padding: 10px 50px;
+    display: flex;
+}
+.side .leftside {
+    width: 50%;
+    padding: 20px;
+}
+.side .rightside {
+    width: 50%;
+    padding: 20px 50px;
+}
+.side .rightside #Name {
+    padding: 20px;
+    width: 50%;
+}
+.side .rightside #Email {
+    width: 49%;
+    padding: 20px;
+}
+.side .rightside #Subject {
+    padding: 20px;
+    width: 100%;
+    margin-top: 10px;
+}
+.side .rightside #Message{
+    padding: 20px;
+    width: 100%;
+    margin-top: 10px;
+    height: 50%;
+}
+.side .rightside button {
+    border: none;
+    background-color: rgb(255, 174, 0);
+    color: white;
+    padding: 20px;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 1.1rem;
+}
+
+
+
+/* responsive for tab */
+@media (max-width:1200px) {
+    .side {
+        width: 100%;
+        flex-direction: column;
+    }
+    .side .leftside {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .side .rightside {
+        width: 100%;
+        padding: 40px;
+        margin-left: 0px;
+    }
+    
+}
+
+/* responsive for mobiles  */
+@media (max-width:576px) {
+    .line2 {
+        font-size: 1.2rem;
+    }
+    .box {
+        padding: 30px 50px;
+        flex-direction: column;
+    }
+    .box .box2 {
+        margin-top: 25px;
+    }
+    .box .box3 {
+        margin-top: 25px;
+    }
+    .side .leftside {
+        width: 100%;
+        padding: 0px;
+    }
+    .side .rightside {
+        width: 100%;
+        padding: 0px;
+        margin-top: 10px;
+    }
+    .side .rightside  #Name {
+        width: 100%;
+    }
+    .side .rightside  #Email {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
